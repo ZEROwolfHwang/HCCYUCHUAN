@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <com.qozix.tileview.TileView
+        android:id="@+id/tile_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.qozix.tileview.TileView>
+
+    <include layout="@layout/activity_main_text"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="@dimen/layout_margin10dp"
+        android:background="@drawable/corners_bg3"
+        android:elevation="@dimen/layout_margin10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/main_jia"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/main_jia"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d6d6"/>
+
+        <ImageView
+            android:id="@+id/main_jian"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/corners_bg3"
+            android:src="@drawable/main_jian"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_dingwei"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg3"
+        android:elevation="@dimen/layout_margin10dp"
+        android:src="@drawable/main_dingwei"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/main_dingwei"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/main_text_bilichi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10海里"
+            android:textColor="@color/first_text_color"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/main_view_bilichi"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_bilichi"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/corners_bg2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/main_sousuo"
+            style="@style/main_text_bottom_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="搜索"/>
+
+        <TextView
+            android:id="@+id/main_celiang"
+            style="@style/main_text_bottom_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="测量"/>
+
+        <TextView
+            android:id="@+id/main_daohang"
+            style="@style/main_text_bottom_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="导航"/>
+
+        <TextView
+            android:id="@+id/main_shoucang"
+            style="@style/main_text_bottom_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="收藏"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

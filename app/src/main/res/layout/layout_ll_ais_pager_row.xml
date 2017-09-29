@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_ais_item_page">
+
+    <LinearLayout
+        style="@style/ll_ais_item_page_style">
+
+        <TextView
+            android:id="@+id/ais_title_left"
+            style="@style/ais_pager_title_style"/>
+
+        <TextView
+            android:id="@+id/text_table_1"
+            style="@style/ais_pager_content_style"/>
+
+        <TextView
+            android:id="@+id/ais_title_right"
+            style="@style/ais_pager_title_style"/>
+
+        <TextView
+            android:id="@+id/text_table_2"
+            style="@style/ais_pager_content_style"/>
+    </LinearLayout>
+
+    <include layout="@layout/device_item_bg_1dp"/>
+</LinearLayout>

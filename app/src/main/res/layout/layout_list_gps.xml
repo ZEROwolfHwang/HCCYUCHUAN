@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ruitong.yuchuan.maptest.ui.VerticalProgressBar
+        android:layout_marginTop="10dip"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pb_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="15dip"
+        android:layout_height="100dip"
+        android:max="100"
+        android:progress="30"
+        android:gravity="center"
+        android:progressDrawable="@drawable/progressbar"/>
+
+
+    <TextView
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:layout_weight="1"
+        android:text="215"
+        android:textSize="15sp"
+        android:id="@+id/gps_id"
+        android:gravity="center"
+        android:textColor="@color/Black"/>
+
+
+
+</LinearLayout>

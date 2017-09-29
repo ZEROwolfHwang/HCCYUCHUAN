@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/ll_pager_01"
+            layout="@layout/layout_ll_ais_pager_row"/>
+
+        <include
+            android:id="@+id/ll_pager_02"
+            layout="@layout/layout_ll_ais_pager_row"/>
+        <include
+            android:id="@+id/ll_pager_03"
+            layout="@layout/layout_ll_ais_pager_row"/>
+        <include
+            android:id="@+id/ll_pager_04"
+            layout="@layout/layout_ll_ais_pager_row"/>
+        <include
+            android:id="@+id/ll_pager_05"
+            layout="@layout/layout_ll_ais_pager_row"/>
+        <include
+            android:id="@+id/ll_pager_06"
+            layout="@layout/layout_ll_ais_pager_row"/>
+        <include
+            android:id="@+id/ll_pager_07"
+            layout="@layout/layout_ll_ais_pager_row"/>
+        <include
+            android:id="@+id/ll_pager_08"
+            layout="@layout/layout_ll_ais_pager_row"/>
+        <include
+            android:id="@+id/ll_pager_09"
+            layout="@layout/layout_ll_ais_pager_row"/>
+
+    </LinearLayout>
+</ScrollView>

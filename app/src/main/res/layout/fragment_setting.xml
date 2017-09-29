@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/setting_platform"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="海渔平台"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/device_item_bg_16dp"/>
+
+    <LinearLayout
+        android:id="@+id/setting_ais"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="AIS设置"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/device_item_bg_1dp"/>
+
+    <LinearLayout
+        android:id="@+id/setting_sos"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="SOS参数"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/device_item_bg_1dp"/>
+
+    <LinearLayout
+        android:id="@+id/setting_hot_key"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="快捷键设置"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/device_item_bg_1dp"/>
+
+    <LinearLayout
+        android:id="@+id/setting_alarm"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="报警设置"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/device_item_bg_16dp"/>
+    <LinearLayout
+        android:id="@+id/setting_fence"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="电子围栏"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+    </LinearLayout>
+        <include layout="@layout/device_item_bg_1dp"/>
+  <LinearLayout
+        android:id="@+id/setting_model"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="工作模式"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+    </LinearLayout>
+        <include layout="@layout/device_item_bg_1dp"/>
+    <LinearLayout
+        android:id="@+id/setting_route"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="航线轨迹"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+    </LinearLayout>
+        <include layout="@layout/device_item_bg_16dp"/>
+
+  <LinearLayout
+        android:id="@+id/setting_about"
+        style="@style/setting_ll_style">
+
+        <TextView
+            style="@style/setting_title_style"
+            android:drawableLeft="@drawable/setting_sos"
+            android:text="版本信息"/>
+
+        <ImageView
+            style="@style/setting_image_style"/>
+    </LinearLayout>
+        <include layout="@layout/device_item_bg_16dp"/>
+
+
+</LinearLayout>
