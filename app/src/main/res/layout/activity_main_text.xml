@@ -9,6 +9,7 @@
     android:id="@+id/main_text_info_dialog"
     android:layout_alignParentRight="true"
     android:paddingLeft="10dp"
+    android:layout_marginRight="10dp"
     tools:showIn="@layout/activity_main_content">
 
     <LinearLayout

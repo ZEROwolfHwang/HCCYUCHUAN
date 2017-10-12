@@ -18,6 +18,8 @@
 
     <include layout="@layout/activity_main_text"/>
 
+    <include layout="@layout/main_dialog_distance"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,6 +39,11 @@
             android:src="@drawable/main_jia"/>
 
         <TextView
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#d6d6d6"/>
@@ -49,11 +56,15 @@
             android:src="@drawable/main_jian"/>
     </LinearLayout>
 
+
+    <include layout="@layout/main_util_navigation"/>
+
     <ImageView
         android:id="@+id/main_dingwei"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
         android:layout_marginTop="10dp"
@@ -73,60 +84,29 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_gravity="center"
             android:id="@+id/main_text_bilichi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="10海里"
             android:textColor="@color/first_text_color"
             android:textSize="14sp"
             />
 
         <TextView
-            android:layout_gravity="center"
             android:id="@+id/main_view_bilichi"
             android:layout_width="35dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="@drawable/main_bilichi"
             android:gravity="center_horizontal"
             />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dip"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dip"
-        android:layout_marginLeft="10dip"
-        android:layout_marginRight="10dip"
-        android:background="@drawable/corners_bg2"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+    <include layout="@layout/main_tool_main"/>
 
-        <TextView
-            android:id="@+id/main_sousuo"
-            style="@style/main_text_bottom_style"
-            android:drawableLeft="@drawable/setting_sos"
-            android:text="搜索"/>
+    <include layout="@layout/main_tool_distance"/>
 
-        <TextView
-            android:id="@+id/main_celiang"
-            style="@style/main_text_bottom_style"
-            android:drawableLeft="@drawable/setting_sos"
-            android:text="测量"/>
-
-        <TextView
-            android:id="@+id/main_daohang"
-            style="@style/main_text_bottom_style"
-            android:drawableLeft="@drawable/setting_sos"
-            android:text="导航"/>
-
-        <TextView
-            android:id="@+id/main_shoucang"
-            style="@style/main_text_bottom_style"
-            android:drawableLeft="@drawable/setting_sos"
-            android:text="收藏"/>
-
-    </LinearLayout>
+    <include layout="@layout/main_tool_navigation"/>
 
 </RelativeLayout>

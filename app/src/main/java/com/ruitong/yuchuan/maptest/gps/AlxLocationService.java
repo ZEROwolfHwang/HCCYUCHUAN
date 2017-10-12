@@ -235,18 +235,6 @@ public class AlxLocationService extends IntentService {
                     Log.i("AlexLocation", "locationProvider -> " + mNewLatitude + " : " + mNewLongitude + "精确度" + mAccuracy);
                     if (!isWrongPosition(mNewLatitude, mNewLongitude)) {
                         Logger.i("3333333333" + mNewLatitude + "---" + mNewLongitude + "---" + mSpeed);
-                       /* if (mIntent == null) {
-                            mIntent = new Intent();
-                            mIntent.setAction(GPSFragment.ACTION_GPS_BROAD);
-                        }
-                        new Timer().scheduleAtFixedRate(new TimerTask() {
-                            @Override
-                            public void run() {
-                                mIntent.putExtra(Constant.MYLOCATION, myLocation);
-                                Logger.i(myLocation.toString());
-                                sendBroadcast(mIntent);
-                            }
-                        }, 0, 2000);*/
 
                         AlxLocationManager.recordLocation(this, mNewLatitude, mNewLongitude, mAccuracy, mSpeed);
                     }

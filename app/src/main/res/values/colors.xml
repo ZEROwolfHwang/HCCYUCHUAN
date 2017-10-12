@@ -11,4 +11,19 @@
     <color name="first_text_color">#333333</color>
     <color name="Gray">#a9b7b7</color>
     <color name="white">#f3ffffff</color>
+    <color name="AllWhite">#fff</color>
+
+
+
+
+    <color name="Blue">#56abe4</color>
+    <color name="Red">#eb4f38</color>
+    <color name="White">#ecf0f1</color>
+    <color name="Transparent">#00000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="gray">#ff888888</color>
+    <color name="dark_green">#ff009900</color>
+    <color name="White2">#FFFFFFFF</color>
+    <color name="trans">#c7d4d4d4</color>
+    <color name="Gray_Trans">#e38d8f94</color>
 </resources>

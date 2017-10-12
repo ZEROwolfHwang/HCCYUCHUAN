@@ -3,7 +3,7 @@ package com.ruitong.yuchuan.maptest.map;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
 
-import com.ruitong.yuchuan.maptest.utils1.ExtenSdCard;
+import com.ruitong.yuchuan.maptest.utils.ExtenSdCard;
 
 import java.io.File;
 

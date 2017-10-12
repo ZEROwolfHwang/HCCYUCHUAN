@@ -52,12 +52,13 @@ public class ViewPageActivity extends BaseActivity {
         filter.addAction(Constant.Aisaction);
         mAisBroadcast = new AisBroadcast();
         registerReceiver(mAisBroadcast, filter);
-/*
-        Intent intent = new Intent(this, MyDataService.class);
-        startService(intent);*/
+
     }
 
 
+    /**
+     * 初始化ViewPager和TabLayout
+     */
     private void initViewPagerAndTabs() {
 
         mViewPagerFour.setOffscreenPageLimit(4);//设置viewpager预加载页面数

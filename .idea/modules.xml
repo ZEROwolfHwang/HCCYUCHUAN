@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MapTest.iml" filepath="$PROJECT_DIR$/MapTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HaiYuToThree.iml" filepath="$PROJECT_DIR$/HaiYuToThree.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/tileview/tileview.iml" filepath="$PROJECT_DIR$/tileview/tileview.iml" />
     </modules>

@@ -8,13 +8,37 @@ android {
         applicationId "com.ruitong.yuchuan.maptest"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 1
+        versionCode 2
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
+
+ /*   signingConfigs {
         release {
+            storeFile file("ruitong.yuchuansanqi.jks")
+            storePassword "ruitong147258369"
+            keyAlias "key1"
+            keyPassword "ruitong147258369"
+        }
+    }*/
+
+    buildTypes {
+     /*   release {
+//            debuggable true
+            //混淆
+            signingConfig signingConfigs.release
             minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }*/
+        debug {
+//            signingConfig signingConfigs.release
+            zipAlignEnabled false
+            minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -37,18 +61,16 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
 
     compile project(path: ':tileview')
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.orhanobut:logger:1.15'
     compile 'com.belerweb:pinyin4j:2.5.0'
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.belerweb:pinyin4j:2.5.0'
     compile 'com.orhanobut:logger:1.15'
-    compile 'org.litepal.android:core:1.5.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
     compile 'com.google.code.gson:gson:2.8.1'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
@@ -61,5 +83,7 @@ dependencies {
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.google.android.gms:play-services-location:8.4.0'
     compile 'cn.finalteam:okhttpfinal:2.0.7'
+    testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'org.litepal.android:core:1.5.1'
 }

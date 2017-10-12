@@ -12,6 +12,10 @@ package com.ruitong.yuchuan.maptest.manager;
 
 public class GlobalManager {
 
+    public static final String LINE_NAME = "line_name";
+    public static final String POINT_NAME= "point_name";
+    public static String ENTERTYPE_POINT = "entertype_point";
+    public static String ENTERTYPE_LINE = "entertype_line";
     public static String ENTERTYPE_AIS = "entertype_ais";
     public static String ENTERTYPE_GPS = "entertype_gps";
     public static String ENTERTYPE_COMPASS = "entertype_compass";

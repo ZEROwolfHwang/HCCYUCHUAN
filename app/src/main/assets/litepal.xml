@@ -3,11 +3,13 @@
 
         <dbname value="yuchuan" />
 
-
-        <version value="7" />
+        <version value="120" />
 
         <list>
             <mapping class="com.ruitong.yuchuan.maptest.litepalbean.SupportShipBean" />
+            <mapping class="com.ruitong.yuchuan.maptest.litepalbean.SupportPoint" />
+            <mapping class="com.ruitong.yuchuan.maptest.litepalbean.SupportLine" />
+            <mapping class="com.ruitong.yuchuan.maptest.litepalbean.SupportLinePoint" />
 
         </list>
 

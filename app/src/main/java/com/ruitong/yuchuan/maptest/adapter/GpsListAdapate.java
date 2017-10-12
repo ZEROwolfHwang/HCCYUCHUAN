@@ -9,7 +9,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.ruitong.yuchuan.maptest.R;
-import com.ruitong.yuchuan.maptest.bean1.MyGpsSatellite;
+import com.ruitong.yuchuan.maptest.bean.MyGpsSatellite;
 
 import java.util.Collections;
 import java.util.List;

@@ -43,7 +43,7 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.orhanobut.logger.Logger;
 import com.ruitong.yuchuan.maptest.activity.MainActivity;
-import com.ruitong.yuchuan.maptest.utils1.PermissionUtils;
+import com.ruitong.yuchuan.maptest.utils.PermissionUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -91,7 +91,7 @@ public class AlxLocationManager implements GoogleApiClient.ConnectionCallbacks, 
         NOT_TRACK//当前没有开启跟踪模式
     }
 
-    public final static boolean isDebugging = true;//是否显示toast开关
+    public final static boolean isDebugging = false;//是否显示toast开关
 
     public static AlxLocationManager getInstance() {
         return manager;

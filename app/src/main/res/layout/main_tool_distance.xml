@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main_tool_distance"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:background="@drawable/corners_bg2"
+    android:gravity="center_vertical"
+    android:visibility="gone"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_main_content">
+
+    <TextView
+        android:id="@+id/main_distance_sousuo"
+        style="@style/main_text_bottom_style"
+        android:drawableLeft="@drawable/main_sousuo"
+        android:text="搜索"/>
+
+    <TextView
+        android:id="@+id/main_chexiao"
+        style="@style/main_text_bottom_style"
+        android:drawableLeft="@drawable/main_chexiao"
+        android:text="撤销"/>
+
+    <TextView
+        android:id="@+id/main_qingkong"
+        style="@style/main_text_bottom_style"
+        android:drawableLeft="@drawable/main_clear"
+        android:text="清空"/>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main_tool_main"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:background="@drawable/corners_bg2"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_main_content">
+
+    <TextView
+        android:id="@+id/main_sousuo"
+        style="@style/main_text_bottom_style"
+        android:drawableLeft="@drawable/main_sousuo"
+        android:text="搜索"/>
+
+    <TextView
+        android:id="@+id/main_celiang"
+        style="@style/main_text_bottom_style"
+        android:drawableLeft="@drawable/main_celiang"
+        android:text="测量"/>
+
+    <TextView
+        android:id="@+id/main_daohang"
+        style="@style/main_text_bottom_style"
+        android:drawableLeft="@drawable/main_daohang"
+        android:text="导航"/>
+
+    <TextView
+        android:id="@+id/main_shoucang"
+        style="@style/main_text_bottom_style"
+        android:drawableLeft="@drawable/main_shoucang"
+        android:text="收藏"/>
+
+</LinearLayout>

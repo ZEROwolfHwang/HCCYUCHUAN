@@ -13,12 +13,12 @@ import com.orhanobut.logger.Logger;
 import com.qozix.tileview.detail.DetailLevel;
 import com.qozix.tileview.graphics.BitmapProvider;
 import com.qozix.tileview.tiles.Tile;
-import com.ruitong.yuchuan.maptest.bean1.CachImageBean;
-import com.ruitong.yuchuan.maptest.bean1.MapDataBaseXmlBean;
-import com.ruitong.yuchuan.maptest.bean1.MapDateBaseItem;
-import com.ruitong.yuchuan.maptest.utils1.BitmapUtil;
-import com.ruitong.yuchuan.maptest.utils1.ExtenSdCard;
-import com.ruitong.yuchuan.maptest.utils1.MapDataBaseXmlUtil;
+import com.ruitong.yuchuan.maptest.bean.CachImageBean;
+import com.ruitong.yuchuan.maptest.bean.MapDataBaseXmlBean;
+import com.ruitong.yuchuan.maptest.bean.MapDateBaseItem;
+import com.ruitong.yuchuan.maptest.utils.BitmapUtil;
+import com.ruitong.yuchuan.maptest.utils.ExtenSdCard;
+import com.ruitong.yuchuan.maptest.utils.MapDataBaseXmlUtil;
 
 import java.io.File;
 import java.io.InputStream;
@@ -177,7 +177,6 @@ public class BitmapProviderAssets3 implements BitmapProvider {
         Date date2=new Date();
         long time2=date2.getTime();
         duringTime=time2-time1;
-        Logger.i("x=? and y=?"+x+"dsg"+ y+"timeUseBBBZ"+duringTime);
         if(BitmapUtil.getBitmapFromMemCache(x+"_"+y)!=null) {
             return BitmapUtil.getBitmapFromMemCache(x+"_"+y);
         }else {
@@ -190,33 +189,13 @@ public class BitmapProviderAssets3 implements BitmapProvider {
 
             if (dl.getScale() <= 8) {
 
-                Logger.i("scale34325" + dl.getScale() + "ds" + dl.getRelativeScale() + "sfs" + dl.getDetailLevelManager().getCurrentDetailLevel().getScale() + "sgse" + tile.getDetailLevel().getRelativeScale());
                 String unformattedFileName = (String) tile.getData();
-//      String formattedFileName = String.format( unformattedFileName, (int)(tile.getColumn()), (int)(tile.getRow()) );
                 String formattedFileName = String.format(unformattedFileName, (int) (tile.getColumn() + Constant.TimesNeed * dl.getScale() * Constant.minX5), (int) (tile.getRow() + Constant.TimesNeed * dl.getScale() * Constant.minY5));
-                Logger.i("scale36:" + formattedFileName);
-                Logger.i("scale36:" + formattedFileName);
-                Logger.i("scale36:" + formattedFileName + "dfh:" + (tile.getColumn() + Constant.TimesNeed * dl.getScale() * 16 * Constant.minX5) + "row:" + tile.getRow() + "colum:" + tile.getColumn() + "row22" + tile.getRow() + Constant.minY5 * dl.getScale());
                 AssetManager assetManager = context.getAssets();
                 try {
                     InputStream inputStream = assetManager.open(formattedFileName);
                     if (inputStream != null) {
                         try {
-//                        Bitmap bit = BitmapFactory.decodeStream(inputStream, null, OPTIONS);
-//                        int width = bit.getWidth();
-//                        int height = bit.getHeight();
-//                        int newWidth = 512;
-//                        int newHeight = 512;
-//                        float scaleWidth = ((float) newWidth) / width;
-//                        float scaleHeight = ((float) newHeight) / height;
-//                        Matrix matrix = new Matrix();
-//                        matrix.postScale(scaleWidth, scaleHeight);
-//                        bit = Bitmap.createBitmap(bit, 0, 0, width, height, matrix, true);
-//                        int z = bit.getWidth();
-//                        int zh = bit.getHeight();
-////                        Logger.i("dfs" + width + "dgss" + height + "gf" + z + "ser" + zh);
-////
-//return  bit;
                             Bitmap a = BitmapFactory.decodeStream(inputStream, null, OPTIONS);
                             if (a!= null) {
                                 BitmapUtil.addBitmapToMemCache(x+"_"+y, a);
@@ -224,23 +203,12 @@ public class BitmapProviderAssets3 implements BitmapProvider {
                             Date date3=new Date();
                             long time3=date3.getTime();
                             duringTime=time3-time2;
-                            Logger.i("x=? and y=?"+x+"dsg"+ y+"timeUseBBBZHH"+duringTime);
-//                              if(a!=null){
-//                                  CachImageBean cib=new CachImageBean();
-//                                  cib.setX( (int) (tile.getColumn() + dl.getScale() * Constant.minX5));
-//                                  cib.setY((int) (tile.getRow() + dl.getScale() * Constant.minY5));
-//                                  cib.setBitmap(a);
-//                                  cibList.add(cib);
-//                              }
                             return a;
 
-
                         } catch (OutOfMemoryError | Exception e) {
-                            // this is probably an out of memory error - you can try sleeping (this method won't be called in the UI thread) or try again (or give up)
                         }
                     }
                 } catch (Exception e) {
-                    // this is probably an IOException, meaning the file can't be found
                 }
             } else if (dl.getScale() > 8) {
 
@@ -311,13 +279,13 @@ public class BitmapProviderAssets3 implements BitmapProvider {
                             }
                         } else {
                             return initDefaultMap(context);
-//                              return  null;
+
                         }
 
                         Logger.i("dsd" + isFind);
                         if (isFind == false) {
                             return initDefaultMap(context);
-//                              return  null;
+
                         } else {
                             Date date3=new Date();
                             long time3=date3.getTime();
@@ -328,17 +296,15 @@ public class BitmapProviderAssets3 implements BitmapProvider {
 
                     }
 
-
                 } catch (Exception e) {
                     return initDefaultMap(context);
-//                    return null;
                 }
             }
 
         }
     }
       return   initDefaultMap(context);
-//    return null;
+
   }
 
 

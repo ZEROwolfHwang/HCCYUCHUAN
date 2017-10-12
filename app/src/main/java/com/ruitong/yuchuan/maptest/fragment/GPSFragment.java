@@ -27,12 +27,12 @@ import android.widget.TextView;
 import com.orhanobut.logger.Logger;
 import com.ruitong.yuchuan.maptest.R;
 import com.ruitong.yuchuan.maptest.adapter.GpsListAdapate;
-import com.ruitong.yuchuan.maptest.bean1.MyGpsSatellite;
+import com.ruitong.yuchuan.maptest.bean.MyGpsSatellite;
 import com.ruitong.yuchuan.maptest.gps.AlxLocationService;
 import com.ruitong.yuchuan.maptest.surface.SatellitesView;
 import com.ruitong.yuchuan.maptest.ui.HorizontalListView;
-import com.ruitong.yuchuan.maptest.utils1.MathUtils;
-import com.ruitong.yuchuan.maptest.utils1.PermissionUtils;
+import com.ruitong.yuchuan.maptest.utils.MathUtils;
+import com.ruitong.yuchuan.maptest.utils.PermissionUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -115,8 +115,8 @@ public class GPSFragment extends Fragment {
                         String lat = MathUtils.convertToSexagesimal(location.latitude);
                         String lng = MathUtils.convertToSexagesimal(location.longitude);
                         getActivity().runOnUiThread(() -> {
-                            mGpsJingdu.setText(lat);
-                            mGpsWeidu.setText(lng);
+                            mGpsJingdu.setText(lng);
+                            mGpsWeidu.setText(lat);
                             mGpsJingquedu.setText(location.accuracy + "");
                             if (location != null) {
                                 mGpsState.setText("定位");
